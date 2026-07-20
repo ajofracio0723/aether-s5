@@ -40,14 +40,20 @@ export function Craft() {
       </div>
       <ol className="craft-list">
         {LINES.map((line, i) => (
-          <li key={line.title} data-reveal>
+          <li key={line.title} data-reveal={i % 2 === 0 ? 'left' : 'right'}>
             <span className="craft-index">{String(i + 1).padStart(2, '0')}</span>
             <div className="craft-copy">
               <h3>{line.title}</h3>
               <p>{line.body}</p>
             </div>
             <figure className="craft-shot">
-              <img src={line.src} alt={line.alt} loading="lazy" decoding="async" />
+              <img
+                src={line.src}
+                alt={line.alt}
+                loading="lazy"
+                decoding="async"
+                data-parallax="12"
+              />
             </figure>
           </li>
         ))}

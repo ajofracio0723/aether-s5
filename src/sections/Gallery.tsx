@@ -89,7 +89,13 @@ export function Gallery() {
             data-reveal
             style={'pos' in shot && shot.pos ? ({ '--pos': shot.pos } as CSSProperties) : undefined}
           >
-            <img src={shot.src} alt={shot.alt} loading="lazy" decoding="async" />
+            <img
+              src={shot.src}
+              alt={shot.alt}
+              loading="lazy"
+              decoding="async"
+              data-parallax="14"
+            />
             <figcaption>{shot.caption}</figcaption>
           </figure>
         ))}

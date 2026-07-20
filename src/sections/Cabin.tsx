@@ -49,7 +49,13 @@ export function Cabin() {
       <div className="cabin-visuals">
         {INTERIOR_SHOTS.map((shot) => (
           <figure key={shot.caption} className="cabin-shot" data-reveal>
-            <img src={shot.src} alt={shot.alt} loading="lazy" decoding="async" />
+            <img
+              src={shot.src}
+              alt={shot.alt}
+              loading="lazy"
+              decoding="async"
+              data-parallax="10"
+            />
             <figcaption>{shot.caption}</figcaption>
           </figure>
         ))}

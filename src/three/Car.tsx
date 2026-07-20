@@ -87,6 +87,7 @@ function Seal5Model() {
     if (!root.current) return
     root.current.rotation.y = scrollState.carYaw
     root.current.rotation.x = scrollState.carPitch
+    root.current.position.y = scrollState.carLift
 
     if (scrollState.paintDirty && paintMats.current.length) {
       const color = new THREE.Color(scrollState.paintColor)

@@ -2,6 +2,7 @@ import { Suspense, useEffect, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { ContactShadows, Html } from '@react-three/drei'
 import * as THREE from 'three'
+import { SplineBackdrop } from '../components/SplineBackdrop'
 import { Car } from './Car'
 import { scrollState } from './scrollState'
 
@@ -25,15 +26,13 @@ function CameraRig() {
 function SceneContent() {
   return (
     <>
-      <color attach="background" args={['#070a0f']} />
-      <fog attach="fog" args={['#070a0f', 14, 30]} />
-
-      <hemisphereLight args={['#f0f4f8', '#1a222c', 1.1]} />
-      <ambientLight intensity={1.1} />
-      <directionalLight position={[6, 10, 4]} intensity={3.2} castShadow />
-      <directionalLight position={[-5, 4, -3]} intensity={1.8} color="#c5dcff" />
-      <directionalLight position={[0, 4, 7]} intensity={1.6} />
-      <pointLight position={[2, 2, 3]} intensity={1.2} color="#ffffff" distance={20} />
+      {/* Transparent clear so the Spline backdrop shows behind the car */}
+      <hemisphereLight args={['#f0f4f8', '#1a222c', 0.85]} />
+      <ambientLight intensity={0.95} />
+      <directionalLight position={[6, 10, 4]} intensity={2.8} castShadow />
+      <directionalLight position={[-5, 4, -3]} intensity={1.5} color="#c5dcff" />
+      <directionalLight position={[0, 4, 7]} intensity={1.35} />
+      <pointLight position={[2, 2, 3]} intensity={1} color="#ffffff" distance={20} />
 
       <CameraRig />
 
@@ -56,12 +55,7 @@ function SceneContent() {
         <Car />
       </Suspense>
 
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
-        <circleGeometry args={[14, 64]} />
-        <meshStandardMaterial color="#10161e" roughness={0.9} metalness={0.12} />
-      </mesh>
-
-      <ContactShadows position={[0, 0.015, 0]} opacity={0.7} scale={18} blur={2.8} far={9} />
+      <ContactShadows position={[0, 0.015, 0]} opacity={0.55} scale={18} blur={2.8} far={9} />
     </>
   )
 }
@@ -84,12 +78,20 @@ export function Scene() {
 
   return (
     <div className="canvas-root" id="canvas-root" aria-hidden>
+      <SplineBackdrop />
       <Canvas
+        className="car-canvas"
         shadows
         dpr={[1, 1.5]}
         camera={{ position: [4.6, 1.7, 6.2], fov: 35, near: 0.1, far: 80 }}
-        gl={{ antialias: true, alpha: false, powerPreference: 'high-performance' }}
+        gl={{
+          antialias: true,
+          alpha: true,
+          premultipliedAlpha: false,
+          powerPreference: 'high-performance',
+        }}
         onCreated={({ gl }) => {
+          gl.setClearColor(0x000000, 0)
           gl.toneMapping = THREE.ACESFilmicToneMapping
           gl.toneMappingExposure = 1.35
         }}

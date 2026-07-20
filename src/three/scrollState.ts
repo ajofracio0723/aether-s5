@@ -6,6 +6,7 @@ export const scrollState = {
   cameraHeight: 1.45,
   carYaw: 0.55,
   carPitch: 0,
+  carLift: 0,
   headlightIntensity: 0.7,
   accentGlow: 0.5,
   wheelSpin: 0,

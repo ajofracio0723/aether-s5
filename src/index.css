@@ -13,12 +13,31 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  background: transparent;
+}
+
+.spline-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
   background: radial-gradient(ellipse 70% 55% at 58% 40%, #15202c 0%, #070a0f 68%);
 }
 
+.spline-backdrop spline-viewer {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.canvas-root .car-canvas,
 .canvas-root canvas {
+  position: relative;
+  z-index: 1;
   width: 100% !important;
   height: 100% !important;
+  background: transparent !important;
 }
 
 .atmosphere {
@@ -241,6 +260,7 @@
   image-rendering: auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  will-change: transform;
 }
 
 .hero-media picture,
@@ -423,9 +443,10 @@
 
 .desire-visual img {
   width: 100%;
-  height: 100%;
+  height: 118%;
   object-fit: cover;
   object-position: 45% 50%;
+  will-change: transform;
 }
 
 .desire-visual figcaption {
@@ -541,10 +562,15 @@
   border-left: 3px solid var(--accent);
   backdrop-filter: blur(16px);
   opacity: 0;
-  transform: translateY(18px);
-  transition:
-    opacity 0.45s var(--ease),
-    transform 0.45s var(--ease);
+  transform: translateY(18px) scale(0.98);
+  animation: journey-panel-in 0.55s var(--ease) forwards;
+}
+
+@keyframes journey-panel-in {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @media (min-width: 900px) {
@@ -556,11 +582,6 @@
   .journey-panel {
     padding: 2.15rem 2.35rem 2.25rem;
   }
-}
-
-.journey-panel.is-active {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .journey-stage {
@@ -683,8 +704,9 @@
 
 .craft-shot img {
   width: 100%;
-  height: 100%;
+  height: 118%;
   object-fit: cover;
+  will-change: transform;
 }
 
 .cabin {
@@ -730,9 +752,10 @@
 
 .cabin-shot img {
   width: 100%;
-  height: 100%;
+  height: 118%;
   object-fit: cover;
   object-position: center;
+  will-change: transform;
 }
 
 .cabin-shot figcaption {
@@ -894,10 +917,11 @@
 
 .gallery-item img {
   width: 100%;
-  height: 100%;
+  height: 118%;
   object-fit: cover;
   object-position: var(--pos, center);
   transition: transform 0.5s var(--ease);
+  will-change: transform;
 }
 
 .gallery-item:hover img {
@@ -1500,6 +1524,11 @@
   .hero-scroll span {
     animation: none;
     transition: none;
+  }
+
+  .journey-panel {
+    opacity: 1;
+    transform: none;
   }
 
   [data-reveal] {

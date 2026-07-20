@@ -27,6 +27,8 @@ export function useScrollFunnel() {
         cameraRadius: 6.4,
         cameraHeight: 1.45,
         carYaw: 0.55,
+        carPitch: 0,
+        carLift: 0,
         headlightIntensity: 0.8,
         accentGlow: 0.55,
         wheelSpin: 0,
@@ -44,6 +46,8 @@ export function useScrollFunnel() {
           cameraRadius: 6.4,
           cameraHeight: 1.45,
           carYaw: 0.55,
+          carPitch: 0.02,
+          carLift: 0,
           headlightIntensity: 0.7,
           accentGlow: 0.5,
           wheelSpin: 0,
@@ -58,71 +62,79 @@ export function useScrollFunnel() {
           setStage(Math.min(3, Math.max(0, Math.round(proxy.stage))))
         }
 
-        // Journey scrub: orbit + feature stages
+        // Journey scrub: orbit + feature stages (more expressive path)
         gsap
           .timeline({
             scrollTrigger: {
               trigger: journey,
               start: 'top top',
               end: 'bottom bottom',
-              scrub: 0.7,
+              scrub: 0.85,
             },
           })
-          // Form
+          // Form — low front three-quarter
           .to(proxy, {
             progress: 0.25,
-            cameraAngle: Math.PI * 0.55,
-            cameraRadius: 6.6,
-            cameraHeight: 1.4,
-            carYaw: 0.2,
-            headlightIntensity: 0.7,
-            accentGlow: 0.5,
-            wheelSpin: Math.PI * 1.2,
+            cameraAngle: Math.PI * 0.62,
+            cameraRadius: 6.9,
+            cameraHeight: 1.55,
+            carYaw: 0.35,
+            carPitch: 0.04,
+            carLift: 0.04,
+            headlightIntensity: 0.85,
+            accentGlow: 0.55,
+            wheelSpin: Math.PI * 1.6,
             stage: 0,
             duration: 1,
             ease: 'none',
             onUpdate: apply,
           })
-          // Range — side profile
+          // Range — long side profile pull-back
           .to(proxy, {
             progress: 0.5,
-            cameraAngle: Math.PI * 0.95,
-            cameraRadius: 7.4,
-            cameraHeight: 1.25,
-            carYaw: 0,
-            headlightIntensity: 0.9,
-            accentGlow: 0.7,
-            wheelSpin: Math.PI * 2.8,
+            cameraAngle: Math.PI * 1.05,
+            cameraRadius: 8.1,
+            cameraHeight: 1.15,
+            carYaw: -0.08,
+            carPitch: -0.02,
+            carLift: 0,
+            headlightIntensity: 1,
+            accentGlow: 0.75,
+            wheelSpin: Math.PI * 3.4,
             stage: 1,
             duration: 1,
             ease: 'none',
             onUpdate: apply,
           })
-          // Charge — rear three-quarter
+          // Charge — rear three-quarter dive
           .to(proxy, {
             progress: 0.75,
-            cameraAngle: Math.PI * 1.35,
-            cameraRadius: 6.2,
-            cameraHeight: 1.35,
-            carYaw: -0.15,
-            headlightIntensity: 1.1,
-            accentGlow: 0.85,
-            wheelSpin: Math.PI * 4.2,
+            cameraAngle: Math.PI * 1.42,
+            cameraRadius: 5.8,
+            cameraHeight: 1.05,
+            carYaw: -0.28,
+            carPitch: 0.06,
+            carLift: 0.06,
+            headlightIntensity: 1.25,
+            accentGlow: 0.9,
+            wheelSpin: Math.PI * 5.2,
             stage: 2,
             duration: 1,
             ease: 'none',
             onUpdate: apply,
           })
-          // Drive — closer detail
+          // Drive — close nose detail
           .to(proxy, {
             progress: 1,
-            cameraAngle: Math.PI * 1.75,
-            cameraRadius: 5.2,
-            cameraHeight: 1.1,
-            carYaw: 0.25,
-            headlightIntensity: 1.45,
+            cameraAngle: Math.PI * 1.88,
+            cameraRadius: 4.6,
+            cameraHeight: 0.95,
+            carYaw: 0.42,
+            carPitch: 0.08,
+            carLift: 0.02,
+            headlightIntensity: 1.55,
             accentGlow: 1,
-            wheelSpin: Math.PI * 6,
+            wheelSpin: Math.PI * 7.5,
             stage: 3,
             duration: 1,
             ease: 'none',

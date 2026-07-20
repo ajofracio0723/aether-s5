@@ -2,6 +2,7 @@ import { Atmosphere } from './components/Atmosphere'
 import { Nav } from './components/Nav'
 import { ScrollProgress } from './components/ScrollProgress'
 import { StickyCta } from './components/StickyCta'
+import { useScrollExtras } from './hooks/useScrollExtras'
 import { useScrollFunnel } from './hooks/useScrollFunnel'
 import { Cabin } from './sections/Cabin'
 import { Close } from './sections/Close'
@@ -20,6 +21,7 @@ import { Scene } from './three/Scene'
 
 export default function App() {
   const { stage, stickyVisible, journeyRef } = useScrollFunnel()
+  useScrollExtras()
 
   return (
     <div className="app">

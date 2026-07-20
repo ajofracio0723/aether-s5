@@ -37,9 +37,11 @@ export function Proof() {
       </div>
       <div className="proof-beats">
         {BEATS.map((beat) => (
-          <article className="proof-beat" key={beat.label} data-reveal>
+          <article className="proof-beat" key={beat.label} data-reveal="scale">
             <p className="proof-value">
-              {beat.value}
+              <span data-count={beat.value} data-decimals={beat.value.includes('.') ? 1 : 0}>
+                0
+              </span>
               <em>{beat.unit}</em>
             </p>
             <p className="proof-label">{beat.label}</p>
