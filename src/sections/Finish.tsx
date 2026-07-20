@@ -6,8 +6,8 @@ import { scrollState } from '../three/scrollState'
 const FINISHES = [
   { id: 'aurora-white', name: 'Aurora White', hex: '#eef1f4' },
   { id: 'cosmos-black', name: 'Cosmos Black', hex: '#0f1218' },
-  { id: 'harbour-grey', name: 'Harbour Grey', hex: '#7a838d' },
-  { id: 'deep-sea-blue', name: 'Deep Sea Blue', hex: '#1e3d5c' },
+  { id: 'harbour-grey', name: 'Harbour Grey', hex: '#3a4148' },
+  { id: 'deep-sea-blue', name: 'Deep Sea Blue', hex: '#0a1f33' },
 ] as const
 
 export function Finish() {
