@@ -5,12 +5,12 @@ export function Hero() {
         <picture>
           <source
             type="image/webp"
-            srcSet="/images/seal5-hero.webp?v=2 2560w"
+            srcSet="/images/seal5-hero.webp?v=4 2560w"
             sizes="100vw"
           />
           <img
-            src="/images/seal5-hero.jpg?v=2"
-            srcSet="/images/seal5-hero-1920.jpg?v=2 1920w, /images/seal5-hero.jpg?v=2 2560w"
+            src="/images/seal5-hero.jpg?v=4"
+            srcSet="/images/seal5-hero-1920.jpg?v=4 1920w, /images/seal5-hero.jpg?v=4 2560w"
             sizes="100vw"
             alt=""
             width={2560}

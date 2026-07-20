@@ -10,21 +10,32 @@ export function Desire() {
       ref={ref}
       aria-labelledby="desire-title"
     >
-      <p className="desire-kicker" data-reveal>
-        Daily drive, rewritten
-      </p>
-      <h2 id="desire-title" data-reveal>
-        Quiet power for every commute.
-      </h2>
-      <p data-reveal>
-        No theater. No roar. Just a low silver silhouette that arrives before the day asks
-        too much — and still has range left when it does.
-      </p>
-      <ul className="desire-line" data-reveal>
-        <li>Acoustic glass</li>
-        <li>Flush handles</li>
-        <li>0.23 Cd</li>
-      </ul>
+      <div className="desire-copy">
+        <p className="desire-kicker" data-reveal>
+          Daily drive, rewritten
+        </p>
+        <h2 id="desire-title" data-reveal>
+          Quiet power for every commute.
+        </h2>
+        <p data-reveal>
+          No theater. No roar. Just a low silver silhouette that arrives before the day asks
+          too much — and still has range left when it does.
+        </p>
+        <ul className="desire-line" data-reveal>
+          <li>Acoustic glass</li>
+          <li>Flush handles</li>
+          <li>0.23 Cd</li>
+        </ul>
+      </div>
+      <figure className="desire-visual" data-reveal>
+        <img
+          src="/images/gallery/exterior-character.jpg"
+          alt="Low silver S5 silhouette in the showroom"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>Low silver silhouette</figcaption>
+      </figure>
     </section>
   )
 }

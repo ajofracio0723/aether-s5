@@ -5,10 +5,10 @@ export function Nav() {
         AETHER
       </a>
       <div className="nav-links">
-        <a href="#journey">Drive</a>
-        <a href="#craft">Design</a>
+        <a href="#gallery">Gallery</a>
         <a href="#finish">Finish</a>
-        <a href="#offer">Offer</a>
+        <a href="#specs">Specs</a>
+        <a href="#faq">FAQ</a>
         <a className="nav-cta" href="#close">
           Reserve
         </a>
