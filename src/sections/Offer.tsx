@@ -18,14 +18,14 @@ export function Offer() {
           Launch allocation
         </p>
         <h2 id="offer-title" data-reveal>
-          First 200 builds. Starting price locked.
+          First 200 builds. Starting SRP locked.
         </h2>
         <p className="offer-price" data-reveal>
-          $39,900
-          <span>Demo MSRP · Design · 18.3 kWh Super DM-i</span>
+          ₱958,000
+          <span>Dynamic SRP · Premium from ₱1,198,000</span>
         </p>
         <p className="offer-scarcity" data-reveal>
-          47 allocations remaining this month. Reserve with $500 refundable hold — configure
+          47 allocations remaining this month. Reserve with ₱20,000 refundable hold — configure
           after your drive.
         </p>
         <ul className="offer-includes" data-reveal>

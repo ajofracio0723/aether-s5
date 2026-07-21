@@ -5,7 +5,7 @@ const LINES = [
     title: 'Seamless sheet metal',
     body: 'One continuous character line from headlamp to haunches — light finds it before you do.',
     src: '/images/gallery/craft-metal.jpg',
-    alt: 'Sculpted body lines on the S5',
+    alt: 'Sculpted body lines on the Seal 5',
   },
   {
     title: 'Signature light blade',

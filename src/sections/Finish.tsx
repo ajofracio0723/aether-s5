@@ -30,7 +30,7 @@ export function Finish() {
         Choose your presence.
       </h2>
       <p className="section-lead" data-reveal>
-        Tap a finish — the S5 above updates live. All four factory colours included at no
+        Tap a finish — the Seal 5 above updates live. All four factory colours included at no
         upcharge this month.
       </p>
       <div className="finish-swatches" role="list" data-reveal>

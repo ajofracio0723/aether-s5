@@ -1,42 +1,42 @@
 import type { CSSProperties } from 'react'
 import { useReveal } from '../hooks/useReveal'
 
-/** Each src is unique across the whole site (not reused in Compare/Craft/Desire/Cabin). */
+/** Official Seal 5 stills — each src unique across the site. */
 const SHOTS = [
   {
-    src: '/images/gallery/shot-white.jpg?v=2',
-    alt: 'Seal 5 Dynamic as an Xpress EV taxi on the street',
-    caption: 'City duty',
+    src: '/images/gallery/shot-white.jpg?v=3',
+    alt: 'Seal 5 DM-i front face outdoors',
+    caption: 'Front face',
     span: 'gallery-item--wide',
   },
   {
-    src: '/images/gallery/shot-dynamic1.jpg?v=2',
-    alt: 'Seal 5 Premium Harbour Grey three-quarter',
-    caption: 'Harbour Grey',
+    src: '/images/gallery/shot-dynamic1.jpg?v=3',
+    alt: 'Seal 5 DM-i side profile',
+    caption: 'Side profile',
     span: '',
   },
   {
-    src: '/images/gallery/shot-dynamic5.jpg?v=2',
-    alt: 'Seal 5 Dynamic close front detail',
-    caption: 'Nose detail',
+    src: '/images/gallery/shot-dynamic5.jpg?v=3',
+    alt: 'Seal 5 Super DM-i engine bay',
+    caption: 'DM-i powertrain',
     span: '',
   },
   {
-    src: '/images/gallery/shot-hg-rear.jpg?v=2',
-    alt: 'Seal 5 Dynamic Harbour Grey rear three-quarter',
-    caption: 'Tail light',
+    src: '/images/gallery/shot-hg-rear.jpg?v=3',
+    alt: 'Seal 5 Type 2 AC charging port',
+    caption: 'Charge port',
     span: '',
   },
   {
-    src: '/images/gallery/shot-2026a.jpg?v=2',
-    alt: 'Seal 5 Xpress EV taxi alternate street angle',
-    caption: 'Street profile',
+    src: '/images/gallery/shot-2026a.jpg?v=3',
+    alt: 'Portable EV charging cable kit in the trunk',
+    caption: 'Charge kit',
     span: 'gallery-item--wide',
   },
   {
-    src: '/images/gallery/shot-2026b.jpg?v=2',
-    alt: 'Seal 5 on a mall show floor with shoppers',
-    caption: 'Show floor',
+    src: '/images/gallery/shot-2026b.jpg?v=3',
+    alt: 'Seal 5 open boot with cargo space',
+    caption: 'Boot space',
     span: '',
   },
 ] as const
@@ -53,7 +53,7 @@ export function Gallery() {
         Built for the driveway. Ready for the week.
       </h2>
       <p className="section-lead" data-reveal>
-        Street, showroom, and detail — six different frames from the Seal 5 family.
+        Exterior, powertrain, and charge — real Seal 5 frames from arrival to everyday use.
       </p>
       <div className="gallery-grid">
         {SHOTS.map((shot) => (

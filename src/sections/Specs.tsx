@@ -1,25 +1,25 @@
 import { useReveal } from '../hooks/useReveal'
 
-/** Trim table mirrors Seal 5 DM-i Dynamic vs Design/Premium-class packs (export markets). */
+/** PH market trims — SRP from BYD Cars Philippines listings. */
 const TRIMS = [
   {
-    name: 'Comfort',
-    price: 'From $34,900',
-    evRange: '55–80 km*',
-    combined: '1,000+ km',
-    power: '163–179 hp',
+    name: 'Dynamic',
+    price: '₱958,000',
+    evRange: '50 km NEDC',
+    combined: '1,175 km',
+    power: '179 PS',
     accel: '7.9 s',
-    battery: '8.3 kWh Blade',
+    battery: 'Blade LFP',
     highlight: false,
   },
   {
-    name: 'Design',
-    price: 'From $39,900',
-    evRange: '100 km WLTP',
-    combined: '1,050 km WLTP',
-    power: '212 hp',
+    name: 'Premium',
+    price: '₱1,198,000',
+    evRange: 'Higher EV pack',
+    combined: '1,000+ km',
+    power: '212 PS class',
     accel: '7.5 s',
-    battery: '18.3 kWh Blade',
+    battery: 'Larger Blade pack',
     highlight: true,
   },
 ] as const
@@ -30,7 +30,7 @@ const ROWS = [
   { label: 'System power', key: 'power' as const },
   { label: '0–100 km/h', key: 'accel' as const },
   { label: 'Battery', key: 'battery' as const },
-  { label: 'Starting MSRP', key: 'price' as const },
+  { label: 'SRP', key: 'price' as const },
 ]
 
 export function Specs() {
@@ -42,11 +42,11 @@ export function Specs() {
         Trims & specs
       </p>
       <h2 id="specs-title" data-reveal>
-        Choose the S5 that fits your drive.
+        Choose the Seal 5 that fits your drive.
       </h2>
       <p className="section-lead" data-reveal>
         Super DM-i plug-in hybrid — electric for the commute, petrol when you need the long
-        weekend. Demo pricing; real Seal 5 figures vary by market.
+        weekend. Philippines SRP shown; confirm with your dealer.
       </p>
 
       <div className="specs-table-wrap" data-reveal>
@@ -96,8 +96,9 @@ export function Specs() {
         <li>8-year / 160,000 km battery warranty</li>
       </ul>
       <p className="specs-footnote" data-reveal>
-        *Lower-pack electric range is NEDC/CLTC-class depending on market. Design figures follow
-        EU Seal 5 DM-i 18.3 kWh WLTP publications.
+        SRP from BYD Cars Philippines (Dynamic ₱958,000 · Premium ₱1,198,000). Subject to
+        change; provincial pricing and promos may differ. Range figures follow published market
+        claims.
       </p>
     </section>
   )

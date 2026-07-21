@@ -7,17 +7,49 @@ const FEATURES = [
   { label: 'Sound', value: 'Premium audio', note: 'Multi-speaker surround' },
 ] as const
 
-/** Two distinct interior photos — not reused elsewhere on the page. */
+/** Interior stills — not reused elsewhere on the page. */
 const INTERIOR_SHOTS = [
   {
-    src: '/images/gallery/interior-cabin.jpg',
-    alt: 'Premium cabin with floating display and light seats',
-    caption: 'Whisper-quiet cabin',
+    src: '/images/gallery/interior-cabin.jpg?v=3',
+    alt: 'Seal 5 cabin with portrait touchscreen and digital cluster',
+    caption: 'Digital cockpit',
+    span: 'cabin-shot--wide',
   },
   {
-    src: '/images/gallery/interior-dash.jpg',
-    alt: 'Driver cockpit and center console',
-    caption: 'Driver-focused cockpit',
+    src: '/images/gallery/interior-sunroof.jpg?v=3',
+    alt: 'Panoramic glass roof looking up through the cabin',
+    caption: 'Panoramic roof',
+    span: 'cabin-shot--wide',
+  },
+  {
+    src: '/images/gallery/interior-console.jpg?v=3',
+    alt: 'Center console with rotary gear selector and EV HEV modes',
+    caption: 'Center console',
+    span: '',
+  },
+  {
+    src: '/images/gallery/interior-dash.jpg?v=3',
+    alt: 'Driver instrument cluster showing range and tire status',
+    caption: 'Driver display',
+    span: '',
+  },
+  {
+    src: '/images/gallery/interior-seats.jpg?v=3',
+    alt: 'Front sport seats in cream and black',
+    caption: 'Front seats',
+    span: '',
+  },
+  {
+    src: '/images/gallery/interior-rear.jpg?v=3',
+    alt: 'Rear bench with cream upholstery and headrests',
+    caption: 'Rear lounge',
+    span: 'cabin-shot--wide',
+  },
+  {
+    src: '/images/gallery/interior-rear-console.jpg?v=3',
+    alt: 'Rear passenger air vents and USB ports',
+    caption: 'Rear comfort',
+    span: 'cabin-shot--wide',
   },
 ] as const
 
@@ -39,7 +71,7 @@ export function Cabin() {
 
       <div className="cabin-visuals">
         {INTERIOR_SHOTS.map((shot) => (
-          <figure key={shot.caption} className="cabin-shot" data-reveal>
+          <figure key={shot.caption} className={`cabin-shot ${shot.span}`} data-reveal>
             <img
               src={shot.src}
               alt={shot.alt}

@@ -3,16 +3,16 @@ import { useReveal } from '../hooks/useReveal'
 
 const ITEMS = [
   {
-    q: 'When will my S5 be delivered?',
+    q: 'When will my Seal 5 be delivered?',
     a: 'Launch allocation builds begin this quarter. Most reservations receive a delivery window within 8–12 weeks after configuration.',
   },
   {
-    q: 'Is the $500 reservation refundable?',
+    q: 'Is the ₱20,000 reservation refundable?',
     a: 'Yes — fully refundable until you lock your configuration and sign the purchase agreement.',
   },
   {
     q: 'Is this a pure EV?',
-    a: 'No — the S5 is a Super DM-i plug-in hybrid. Drive electric for daily loops, then the petrol range-extender keeps you going past 1,000 km combined when needed.',
+    a: 'No — the Seal 5 is a Super DM-i plug-in hybrid. Drive electric for daily loops, then the petrol range-extender keeps you going past 1,000 km combined when needed.',
   },
   {
     q: 'Can I charge at home?',

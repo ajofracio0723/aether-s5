@@ -45,14 +45,14 @@ export function Close() {
             Next step
           </p>
           <h2 id="close-title" data-reveal>
-            Hold your S5.
+            Hold your Seal 5.
           </h2>
           <p data-reveal>
             Tell us where you drive. We’ll confirm your launch allocation and schedule a
             private test drive within 48 hours.
           </p>
           <ul className="close-perks" data-reveal>
-            <li>Refundable $500 hold</li>
+            <li>Refundable ₱20,000 hold</li>
             <li>Priority delivery window</li>
             <li>Private studio appointment</li>
           </ul>
@@ -62,7 +62,7 @@ export function Close() {
           <div className="form-success" role="status" data-reveal>
             <h3>You’re on the list.</h3>
             <p>
-              Check {values.email} for next steps. Your $500 hold is refundable until you
+              Check {values.email} for next steps. Your ₱20,000 hold is refundable until you
               configure.
             </p>
           </div>
@@ -107,7 +107,7 @@ export function Close() {
             </button>
             <p className="form-alt">
               Prefer a PDF?{' '}
-              <a href="/brochure.txt" download="AETHER-S5-brochure.txt">
+              <a href="/brochure.txt" download="BYD-Seal-5-brochure.txt">
                 Download brochure
               </a>
             </p>

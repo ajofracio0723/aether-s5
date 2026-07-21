@@ -18,7 +18,7 @@ export function Desire() {
           Quiet power for every commute.
         </h2>
         <p data-reveal="left">
-          No theater. No roar. Just a low silver silhouette that arrives before the day asks
+          No theater. No roar. Just a quiet silhouette that arrives before the day asks
           too much — and still has range left when it does.
         </p>
         <ul className="desire-line" data-reveal="left">
@@ -29,13 +29,13 @@ export function Desire() {
       </div>
       <figure className="desire-visual" data-reveal="right">
         <img
-          src="/images/gallery/desire.jpg"
-          alt="Low silver S5 silhouette in the showroom"
+          src="/images/gallery/desire.jpg?v=3"
+          alt="Seal 5 DM-i front three-quarter outdoors"
           loading="lazy"
           decoding="async"
           data-parallax="16"
         />
-        <figcaption>Low silver silhouette</figcaption>
+        <figcaption>Quiet arrival</figcaption>
       </figure>
     </section>
   )

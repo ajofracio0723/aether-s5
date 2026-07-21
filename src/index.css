@@ -836,6 +836,20 @@
   }
 }
 
+@media (min-width: 1100px) {
+  .cabin-visuals {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cabin-shot--wide {
+    grid-column: span 3;
+  }
+
+  .cabin-shot:not(.cabin-shot--wide) {
+    grid-column: span 2;
+  }
+}
+
 .cabin-shot {
   position: relative;
   margin: 0;

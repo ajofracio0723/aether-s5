@@ -2,7 +2,7 @@ export function Nav() {
   return (
     <nav className="nav" aria-label="Primary">
       <a className="nav-brand" href="#hero">
-        AETHER
+        BYD
       </a>
       <div className="nav-links">
         <a href="#compare">Compare</a>

@@ -46,7 +46,7 @@ export default function App() {
         <Faq />
         <Close />
         <footer className="footer">
-          © {new Date().getFullYear()} AETHER · Demo funnel · Photos:{' '}
+          © {new Date().getFullYear()} BYD Seal 5 DM-i · Demo funnel · Photos:{' '}
           <a
             href="https://commons.wikimedia.org/wiki/Category:BYD_Seal_5_DM-i_(2025)"
             target="_blank"

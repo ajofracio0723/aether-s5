@@ -1,6 +1,6 @@
 import { useReveal } from '../hooks/useReveal'
 
-/** Grounded in BYD Seal 5 DM-i (EU) Super DM-i figures — AETHER is a demo brand. */
+/** Grounded in BYD Seal 5 DM-i Super DM-i published figures. */
 const BEATS = [
   {
     value: '1050',

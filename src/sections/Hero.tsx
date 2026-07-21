@@ -5,16 +5,16 @@ export function Hero() {
         <picture>
           <source
             type="image/webp"
-            srcSet="/images/seal5-hero.webp?v=8 2560w"
+            srcSet="/images/seal5-hero.webp?v=9 2560w"
             sizes="100vw"
           />
           <img
-            src="/images/seal5-hero.jpg?v=8"
-            srcSet="/images/seal5-hero-1920.jpg?v=8 1920w, /images/seal5-hero.jpg?v=8 2560w"
+            src="/images/seal5-hero.jpg?v=9"
+            srcSet="/images/seal5-hero-1920.jpg?v=9 1920w, /images/seal5-hero.jpg?v=9 2560w"
             sizes="100vw"
             alt=""
-            width={2560}
-            height={1440}
+            width={1000}
+            height={600}
             fetchPriority="high"
             decoding="async"
           />
@@ -25,8 +25,8 @@ export function Hero() {
       <div className="hero-content">
         <p className="hero-eyebrow">Launch allocation · 2026</p>
         <h1 className="hero-brand">
-          <span>AETHER</span>
-          S5
+          <span>BYD</span>
+          Seal 5
         </h1>
         <p className="hero-copy">
           The quiet plug-in hybrid sedan for every commute — Super DM-i calm, long combined
@@ -37,7 +37,7 @@ export function Hero() {
             Reserve yours
           </a>
           <a className="btn btn--ghost" href="#journey">
-            Explore the S5
+            Explore Seal 5
           </a>
         </div>
       </div>
