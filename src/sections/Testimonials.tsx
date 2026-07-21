@@ -10,7 +10,7 @@ const QUOTES = [
   },
   {
     quote:
-      'The range is what sold me. One charge covers my week, and the fast charge stop is genuinely coffee-break quick.',
+      'The electric commute is what sold me. Weekday loops stay quiet — and Super DM-i keeps weekend trips past a thousand kilometres.',
     name: 'Jonah R.',
     role: 'Launch reservation holder',
     rating: '4.8',

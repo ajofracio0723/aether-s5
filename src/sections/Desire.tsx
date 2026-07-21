@@ -23,13 +23,13 @@ export function Desire() {
         </p>
         <ul className="desire-line" data-reveal="left">
           <li>Acoustic glass</li>
-          <li>Flush handles</li>
-          <li>0.23 Cd</li>
+          <li>Blade battery</li>
+          <li>Super DM-i</li>
         </ul>
       </div>
       <figure className="desire-visual" data-reveal="right">
         <img
-          src="/images/gallery/exterior-character.jpg"
+          src="/images/gallery/desire.jpg"
           alt="Low silver S5 silhouette in the showroom"
           loading="lazy"
           decoding="async"

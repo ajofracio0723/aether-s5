@@ -14,7 +14,7 @@ export const scrollState = {
   /** Hidden on hero photo; fades in for journey. */
   canvasOpacity: 0,
   /** Body paint hex — Finish section updates this. */
-  paintColor: '#0f1218',
+  paintColor: '#5c6772',
   paintDirty: true,
 }
 

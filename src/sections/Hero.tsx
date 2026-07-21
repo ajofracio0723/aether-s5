@@ -5,12 +5,12 @@ export function Hero() {
         <picture>
           <source
             type="image/webp"
-            srcSet="/images/seal5-hero.webp?v=4 2560w"
+            srcSet="/images/seal5-hero.webp?v=8 2560w"
             sizes="100vw"
           />
           <img
-            src="/images/seal5-hero.jpg?v=4"
-            srcSet="/images/seal5-hero-1920.jpg?v=4 1920w, /images/seal5-hero.jpg?v=4 2560w"
+            src="/images/seal5-hero.jpg?v=8"
+            srcSet="/images/seal5-hero-1920.jpg?v=8 1920w, /images/seal5-hero.jpg?v=8 2560w"
             sizes="100vw"
             alt=""
             width={2560}
@@ -23,14 +23,14 @@ export function Hero() {
       </div>
 
       <div className="hero-content">
-        <p className="hero-eyebrow">Launch allocation · 2025</p>
+        <p className="hero-eyebrow">Launch allocation · 2026</p>
         <h1 className="hero-brand">
           <span>AETHER</span>
           S5
         </h1>
         <p className="hero-copy">
-          The quiet EV sedan for every commute — sculpted presence, long range, launch
-          allocation open now.
+          The quiet plug-in hybrid sedan for every commute — Super DM-i calm, long combined
+          range, launch allocation open now.
         </p>
         <div className="cta-row">
           <a className="btn btn--primary" href="#close">

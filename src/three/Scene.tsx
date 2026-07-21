@@ -98,6 +98,8 @@ export function Scene() {
       >
         <SceneContent />
       </Canvas>
+      {/* Solid cover above Spline + car canvas — hides free-plan badge */}
+      <div className="spline-logo-cover" />
     </div>
   )
 }

@@ -1,68 +1,42 @@
 import type { CSSProperties } from 'react'
 import { useReveal } from '../hooks/useReveal'
 
+/** Each src is unique across the whole site (not reused in Compare/Craft/Desire/Cabin). */
 const SHOTS = [
   {
-    src: '/images/gallery/exterior-front.jpg',
-    alt: 'AETHER S5 front three-quarter view',
-    caption: 'Front presence',
+    src: '/images/gallery/shot-white.jpg?v=2',
+    alt: 'Seal 5 Dynamic as an Xpress EV taxi on the street',
+    caption: 'City duty',
     span: 'gallery-item--wide',
   },
   {
-    src: '/images/gallery/exterior-aero.jpg',
-    alt: 'AETHER S5 fastback side and rear profile',
-    caption: 'Fastback profile',
-    span: '',
-    pos: '40% 45%',
-  },
-  {
-    src: '/images/gallery/detail-light.jpg',
-    alt: 'AETHER S5 LED light blade detail',
-    caption: 'Light blade detail',
+    src: '/images/gallery/shot-dynamic1.jpg?v=2',
+    alt: 'Seal 5 Premium Harbour Grey three-quarter',
+    caption: 'Harbour Grey',
     span: '',
   },
   {
-    src: '/images/gallery/interior-cabin.jpg',
-    alt: 'AETHER S5 quiet cabin',
-    caption: 'Quiet cabin',
-    span: 'gallery-item--tall',
+    src: '/images/gallery/shot-dynamic5.jpg?v=2',
+    alt: 'Seal 5 Dynamic close front detail',
+    caption: 'Nose detail',
+    span: '',
   },
   {
-    src: '/images/gallery/exterior-white-front.jpg',
-    alt: 'AETHER S5 ready for the driveway',
-    caption: 'Driveway arrival',
+    src: '/images/gallery/shot-hg-rear.jpg?v=2',
+    alt: 'Seal 5 Dynamic Harbour Grey rear three-quarter',
+    caption: 'Tail light',
+    span: '',
+  },
+  {
+    src: '/images/gallery/shot-2026a.jpg?v=2',
+    alt: 'Seal 5 Xpress EV taxi alternate street angle',
+    caption: 'Street profile',
     span: 'gallery-item--wide',
-    pos: '50% 40%',
   },
   {
-    src: '/images/gallery/interior-display.jpg',
-    alt: 'AETHER S5 horizon display',
-    caption: 'Horizon display',
-    span: '',
-  },
-  {
-    src: '/images/gallery/detail-wheel.jpg',
-    alt: 'AETHER S5 aero wheels',
-    caption: '19″ aero wheels',
-    span: '',
-  },
-  {
-    src: '/images/gallery/exterior-white-rear.jpg',
-    alt: 'AETHER S5 full-width tail light',
-    caption: 'Tail signature',
-    span: 'gallery-item--wide',
-    pos: '55% 45%',
-  },
-  {
-    src: '/images/gallery/interior-seats.jpg',
-    alt: 'AETHER S5 ventilated front seats',
-    caption: 'Nappa-soft seats',
-    span: '',
-  },
-  {
-    src: '/images/gallery/detail-handle.jpg',
-    alt: 'AETHER S5 flush handle and charging port',
-    caption: 'Hidden aero',
+    src: '/images/gallery/shot-2026b.jpg?v=2',
+    alt: 'Seal 5 on a mall show floor with shoppers',
+    caption: 'Show floor',
     span: '',
   },
 ] as const
@@ -79,7 +53,7 @@ export function Gallery() {
         Built for the driveway. Ready for the week.
       </h2>
       <p className="section-lead" data-reveal>
-        Exterior sculpture, cabin calm, and the details you notice every time you walk up to it.
+        Street, showroom, and detail — six different frames from the Seal 5 family.
       </p>
       <div className="gallery-grid">
         {SHOTS.map((shot) => (

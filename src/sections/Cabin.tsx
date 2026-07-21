@@ -4,29 +4,20 @@ const FEATURES = [
   { label: 'Cabin', value: 'Whisper quiet', note: 'Double-glazed front glass' },
   { label: 'Display', value: '15.6″', note: 'Floating center canvas' },
   { label: 'Seats', value: 'Nappa-soft', note: 'Ventilated front pair' },
-  { label: 'Sound', value: '12-speaker', note: 'Studio-tuned surround' },
+  { label: 'Sound', value: 'Premium audio', note: 'Multi-speaker surround' },
 ] as const
 
+/** Two distinct interior photos — not reused elsewhere on the page. */
 const INTERIOR_SHOTS = [
   {
-    src: '/images/gallery/interior-ambient.jpg',
-    alt: 'Soft ambient cabin with warm materials',
+    src: '/images/gallery/interior-cabin.jpg',
+    alt: 'Premium cabin with floating display and light seats',
     caption: 'Whisper-quiet cabin',
   },
   {
-    src: '/images/gallery/interior-display.jpg',
-    alt: '15.6 inch floating center display',
-    caption: '15.6″ horizon display',
-  },
-  {
-    src: '/images/gallery/interior-seats.jpg',
-    alt: 'Nappa-soft ventilated front seats',
-    caption: 'Nappa-soft seats',
-  },
-  {
     src: '/images/gallery/interior-dash.jpg',
-    alt: 'Driver cockpit with surround speakers',
-    caption: 'Studio-tuned cockpit',
+    alt: 'Driver cockpit and center console',
+    caption: 'Driver-focused cockpit',
   },
 ] as const
 

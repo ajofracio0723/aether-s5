@@ -1,11 +1,11 @@
 import { useReveal } from '../hooks/useReveal'
 
 const INCLUDES = [
-  '19″ aero wheels',
-  'Heat pump climate',
+  '18″ aero wheels',
   '15.6″ center display',
+  'Blade LFP battery',
   'Driver assist suite',
-  'Lifetime warranty on battery',
+  '8-year battery warranty',
 ] as const
 
 export function Offer() {
@@ -21,8 +21,8 @@ export function Offer() {
           First 200 builds. Starting price locked.
         </h2>
         <p className="offer-price" data-reveal>
-          $42,900
-          <span>MSRP before incentives · Long Range RWD</span>
+          $39,900
+          <span>Demo MSRP · Design · 18.3 kWh Super DM-i</span>
         </p>
         <p className="offer-scarcity" data-reveal>
           47 allocations remaining this month. Reserve with $500 refundable hold — configure

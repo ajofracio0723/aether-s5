@@ -4,20 +4,20 @@ const LINES = [
   {
     title: 'Seamless sheet metal',
     body: 'One continuous character line from headlamp to haunches — light finds it before you do.',
-    src: '/images/gallery/detail-character.jpg',
-    alt: 'Sculpted side character line on the S5 body',
+    src: '/images/gallery/craft-metal.jpg',
+    alt: 'Sculpted body lines on the S5',
   },
   {
     title: 'Signature light blade',
-    body: 'A full-width DRL that reads as a single stroke at night. Recognition without shouting.',
-    src: '/images/gallery/detail-light.jpg',
-    alt: 'LED light blade and front fascia detail',
+    body: 'A full-width rear signature that reads as a single stroke at night.',
+    src: '/images/gallery/craft-light.jpg',
+    alt: 'Full-width tail light signature',
   },
   {
-    title: 'Hidden aero',
-    body: 'Flush door handles, closed grille, and a diffuser tuned for quiet highway miles.',
-    src: '/images/gallery/detail-handle.jpg',
-    alt: 'Flush door handle and aero rear quarter',
+    title: 'Paint that holds light',
+    body: 'Deep quartz metallics shift with the sun — the silhouette stays quiet, the surface never does.',
+    src: '/images/gallery/craft-oceanx.jpg',
+    alt: 'Quartz Blue Seal 5 in natural light',
   },
 ] as const
 
@@ -34,8 +34,7 @@ export function Craft() {
           Details you feel before you name them.
         </h2>
         <p className="section-lead" data-reveal>
-          Every edge on the S5 is intentional — less chrome theater, more calm presence in
-          the driveway.
+          From sheet metal to signature light — every edge is intentional in the driveway.
         </p>
       </div>
       <ol className="craft-list">

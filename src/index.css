@@ -31,6 +31,20 @@
   pointer-events: none;
 }
 
+/* Opaque patch painted above Spline + transparent car canvas */
+.spline-logo-cover {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  width: 160px;
+  height: 52px;
+  z-index: 5;
+  pointer-events: none;
+  border-radius: 14px;
+  background: #070a0f;
+  box-shadow: 0 0 28px 18px #070a0f;
+}
+
 .canvas-root .car-canvas,
 .canvas-root canvas {
   position: relative;
@@ -709,6 +723,93 @@
   will-change: transform;
 }
 
+.compare {
+  padding-block: 6rem 7rem;
+}
+
+.compare h2 {
+  margin: 0;
+  max-width: 16ch;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.compare-rows {
+  display: grid;
+  gap: 2.75rem;
+  margin-top: 2.75rem;
+}
+
+.compare-row-head h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.compare-row-head p {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+  max-width: 40rem;
+}
+
+.compare-pair {
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 800px) {
+  .compare-pair {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+  }
+}
+
+.compare-shot {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  aspect-ratio: 16 / 10;
+  background: var(--bg-elevated);
+}
+
+.compare-shot--next {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+}
+
+.compare-shot img {
+  width: 100%;
+  height: 118%;
+  object-fit: cover;
+  will-change: transform;
+}
+
+.compare-shot figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  background: linear-gradient(180deg, transparent, rgba(7, 10, 15, 0.9));
+  color: var(--metal-bright);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.compare-shot figcaption span {
+  color: var(--accent);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+}
+
 .cabin {
   padding-block: 6rem 7rem;
 }
@@ -732,13 +833,6 @@
   .cabin-visuals {
     grid-template-columns: 1fr 1fr;
     gap: 1.1rem;
-  }
-}
-
-@media (min-width: 1100px) {
-  .cabin-visuals {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.15rem;
   }
 }
 
@@ -1035,6 +1129,14 @@
   height: 0.4rem;
   border-radius: 50%;
   background: var(--accent);
+}
+
+.specs-footnote {
+  margin: 1.25rem 0 0;
+  max-width: 46rem;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
 }
 
 .testimonials {

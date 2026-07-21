@@ -1,20 +1,21 @@
 import { useReveal } from '../hooks/useReveal'
 
+/** Grounded in BYD Seal 5 DM-i (EU) Super DM-i figures — AETHER is a demo brand. */
 const BEATS = [
   {
-    value: '520',
+    value: '1050',
     unit: 'km',
-    label: 'WLTP range — designed for full weeks of mixed driving without range anxiety.',
+    label: 'WLTP combined range — full tank + full Blade Battery for weeks of mixed driving.',
   },
   {
-    value: '5.8',
+    value: '7.5',
     unit: 's',
-    label: '0–100 km/h — instant torque that feels decisive without shouting.',
+    label: '0–100 km/h — quiet electric pull from Super DM-i, without theatrics.',
   },
   {
-    value: '28',
-    unit: 'min',
-    label: '30–80% DC charge — enough recovery for another stretch of highway.',
+    value: '100',
+    unit: 'km',
+    label: 'WLTP electric-only range — school runs and office loops without burning fuel.',
   },
 ] as const
 
@@ -31,8 +32,8 @@ export function Proof() {
           Numbers that earn the driveway.
         </h2>
         <p data-reveal>
-          Specs tuned for real roads — not brochure fantasy. The S5 is built to disappear
-          into your week and still feel special on Sunday.
+          Specs aligned to real Super DM-i roads — plug-in hybrid calm with petrol backup when
+          the week runs long.
         </p>
       </div>
       <div className="proof-beats">

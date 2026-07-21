@@ -5,6 +5,7 @@ export function Nav() {
         AETHER
       </a>
       <div className="nav-links">
+        <a href="#compare">Compare</a>
         <a href="#gallery">Gallery</a>
         <a href="#finish">Finish</a>
         <a href="#specs">Specs</a>

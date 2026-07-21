@@ -1,28 +1,35 @@
 import { useReveal } from '../hooks/useReveal'
 
+/** Trim table mirrors Seal 5 DM-i Dynamic vs Design/Premium-class packs (export markets). */
 const TRIMS = [
   {
-    name: 'Long Range RWD',
-    price: '$42,900',
-    range: '520 km',
-    power: '231 hp',
-    charge: '150 kW DC',
+    name: 'Comfort',
+    price: 'From $34,900',
+    evRange: '55–80 km*',
+    combined: '1,000+ km',
+    power: '163–179 hp',
+    accel: '7.9 s',
+    battery: '8.3 kWh Blade',
     highlight: false,
   },
   {
-    name: 'Performance AWD',
-    price: '$48,500',
-    range: '480 km',
-    power: '312 hp',
-    charge: '150 kW DC',
+    name: 'Design',
+    price: 'From $39,900',
+    evRange: '100 km WLTP',
+    combined: '1,050 km WLTP',
+    power: '212 hp',
+    accel: '7.5 s',
+    battery: '18.3 kWh Blade',
     highlight: true,
   },
 ] as const
 
 const ROWS = [
-  { label: 'WLTP range', key: 'range' as const },
-  { label: 'Peak power', key: 'power' as const },
-  { label: 'DC fast charge', key: 'charge' as const },
+  { label: 'Electric-only range', key: 'evRange' as const },
+  { label: 'Combined range', key: 'combined' as const },
+  { label: 'System power', key: 'power' as const },
+  { label: '0–100 km/h', key: 'accel' as const },
+  { label: 'Battery', key: 'battery' as const },
   { label: 'Starting MSRP', key: 'price' as const },
 ]
 
@@ -38,7 +45,8 @@ export function Specs() {
         Choose the S5 that fits your drive.
       </h2>
       <p className="section-lead" data-reveal>
-        Two launch configurations — both with the full driver-assist suite and fast-charge capability.
+        Super DM-i plug-in hybrid — electric for the commute, petrol when you need the long
+        weekend. Demo pricing; real Seal 5 figures vary by market.
       </p>
 
       <div className="specs-table-wrap" data-reveal>
@@ -65,16 +73,32 @@ export function Specs() {
                 ))}
               </tr>
             ))}
+            <tr>
+              <th scope="row">Dimensions (L×W×H)</th>
+              <td colSpan={2}>4,780 × 1,837 × 1,515 mm · 2,718 mm wheelbase</td>
+            </tr>
+            <tr>
+              <th scope="row">Boot</th>
+              <td colSpan={2}>~450–508 L · seats fold for more</td>
+            </tr>
+            <tr>
+              <th scope="row">Powertrain</th>
+              <td colSpan={2}>1.5L Atkinson + front e-motor · E-CVT · FWD</td>
+            </tr>
           </tbody>
         </table>
       </div>
 
       <ul className="specs-included" data-reveal>
-        <li>Heat pump climate control</li>
+        <li>BYD Blade LFP battery</li>
         <li>15.6″ floating display</li>
         <li>Adaptive cruise + lane assist</li>
-        <li>8-year battery warranty</li>
+        <li>8-year / 160,000 km battery warranty</li>
       </ul>
+      <p className="specs-footnote" data-reveal>
+        *Lower-pack electric range is NEDC/CLTC-class depending on market. Design figures follow
+        EU Seal 5 DM-i 18.3 kWh WLTP publications.
+      </p>
     </section>
   )
 }

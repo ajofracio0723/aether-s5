@@ -11,12 +11,16 @@ const ITEMS = [
     a: 'Yes — fully refundable until you lock your configuration and sign the purchase agreement.',
   },
   {
+    q: 'Is this a pure EV?',
+    a: 'No — the S5 is a Super DM-i plug-in hybrid. Drive electric for daily loops, then the petrol range-extender keeps you going past 1,000 km combined when needed.',
+  },
+  {
     q: 'Can I charge at home?',
-    a: 'Every S5 supports AC home charging. We include guidance on wallbox installation and eligible utility rebates.',
+    a: 'Yes. AC home charging covers most weekly electric miles. DC public charging is supported for quicker top-ups on longer trips.',
   },
   {
     q: 'What warranty is included?',
-    a: '8-year / 160,000 km battery warranty plus 5-year vehicle coverage on launch allocation orders.',
+    a: '8-year / 160,000 km battery warranty plus multi-year vehicle coverage on launch allocation orders (demo terms; real BYD coverage varies by market).',
   },
   {
     q: 'Can I book a test drive first?',

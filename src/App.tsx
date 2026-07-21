@@ -6,6 +6,7 @@ import { useScrollExtras } from './hooks/useScrollExtras'
 import { useScrollFunnel } from './hooks/useScrollFunnel'
 import { Cabin } from './sections/Cabin'
 import { Close } from './sections/Close'
+import { Compare } from './sections/Compare'
 import { Craft } from './sections/Craft'
 import { Desire } from './sections/Desire'
 import { Faq } from './sections/Faq'
@@ -34,6 +35,7 @@ export default function App() {
         <Desire />
         <Journey stage={stage} journeyRef={journeyRef} />
         <Craft />
+        <Compare />
         <Gallery />
         <Cabin />
         <Finish />
