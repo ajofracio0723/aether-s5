@@ -5,16 +5,16 @@ export function Hero() {
         <picture>
           <source
             type="image/webp"
-            srcSet="/images/seal5-hero.webp?v=9 2560w"
+            srcSet="/images/seal5-hero.webp?v=11 2560w"
             sizes="100vw"
           />
           <img
-            src="/images/seal5-hero.jpg?v=9"
-            srcSet="/images/seal5-hero-1920.jpg?v=9 1920w, /images/seal5-hero.jpg?v=9 2560w"
+            src="/images/seal5-hero.jpg?v=11"
+            srcSet="/images/seal5-hero-1920.jpg?v=11 1920w, /images/seal5-hero.jpg?v=11 2560w"
             sizes="100vw"
             alt=""
-            width={1000}
-            height={600}
+            width={2560}
+            height={1440}
             fetchPriority="high"
             decoding="async"
           />

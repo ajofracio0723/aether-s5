@@ -27,16 +27,6 @@ export function Desire() {
           <li>Super DM-i</li>
         </ul>
       </div>
-      <figure className="desire-visual" data-reveal="right">
-        <img
-          src="/images/gallery/desire.jpg?v=3"
-          alt="Seal 5 DM-i front three-quarter outdoors"
-          loading="lazy"
-          decoding="async"
-          data-parallax="16"
-        />
-        <figcaption>Quiet arrival</figcaption>
-      </figure>
     </section>
   )
 }
